@@ -27,10 +27,14 @@
 
 const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
 // console.log(numberOfFilms);
+const assessmentMovie = [];
+
+assessmentMovie[0] = prompt('Один из последних просмотренных фильмов?', '');
+assessmentMovie[1] = prompt('На сколько оцените его?', '');
 
 const personalMovieDB = {
   count: numberOfFilms,
-  movies: {},
+  movies: { assessmentMovie },
   actors: {},
   genres: [],
   privat: false,
